@@ -1,0 +1,64 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home - Simon Njenga{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero-section text-center text-light py-5" >
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="display-4 fw-bold">Hello, I'm Simon Njenga</h1>
+        <p class="lead mb-4">Data Scientist | Web Developer | ML & AI Agent Engineer</p>
+        <p class="mb-4">Data Scientist skilled in data analysis, web development, and AI engineering. Let's make AI magic together!</p>
+        <a href="portfolio" class="btn btn-info btn-lg me-2">View Portfolio</a>
+        <a href="contact" class="btn btn-dark btn-lg">Contact Me</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-section py-5">
+    <div class="container text-center" data-aos="fade-up">
+        <img src="{{ url_for('static', filename='img/hero-bg.jpg') }}" alt="Simon Njenga" class="img-fluid rounded-circle mb-3" style="width: 150px;">
+        <h2>About Me</h2>
+        <p class="text-muted w-75 mx-auto">I'm passionate about transforming data into stories and developing solutions that drive impact. With experience in AI, data science, and web development, I bring analytical rigor and creativity to every project.</p>
+        <div class="my-4">
+            <img src="{{ url_for('static', filename='img/background-img/ancient-rome.jpg') }}" alt="Simon Njenga" class="img-fluid rounded-circle mb-3" style="width: 150px;">            
+            <p class="text-muted">Skills: Python, R, SQL, AI Engineering, Data Visualization</p>
+        </div>
+    </div>
+</section>
+
+<!-- highlight skills Section -->
+
+<section id="skills" class="skills-section bg-dark py-5">
+    <div class="container text-center" data-aos="fade-up">
+        <h2>Skills progress</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-graph-up display-4 text-primary mb-3"></i>
+                <h5>Data Science</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-gear display-4 text-primary mb-3"></i>
+                <h5>Machine Learning</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                <h5>Web Development</h5>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

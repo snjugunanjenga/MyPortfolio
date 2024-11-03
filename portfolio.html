@@ -1,0 +1,206 @@
+
+{% extends "base.html" %}
+
+{% block title %}Portfolio - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">My Portfolio</h2>
+    <div class="row">
+        <h3>Web Development Projects</h3>
+        <div class="row">
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_web1.jpg') }}" class="card-img-top" alt="E-commerce Platform">
+                <div class="card-body">
+                    <h5 class="card-title">E-commerce Platform</h5>
+                    <p class="card-text">Developed a robust e-commerce site with secure payment integration, user accounts, and an intuitive product management system.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_web2.jpg') }}" class="card-img-top" alt="Portfolio Website">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">Designed a personal portfolio website with a sleek dark theme and responsive layout to showcase professional work and achievements.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_web3.jpg') }}" class="card-img-top" alt="Blog Platform">
+                <div class="card-body">
+                    <h5 class="card-title">Blog Platform</h5>
+                    <p class="card-text">Built a customizable blog platform with user authentication, comment sections, and content management for blogging communities.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_web4.jpg') }}" class="card-img-top" alt="Business Website Redesign">
+                <div class="card-body">
+                    <h5 class="card-title">Business Website Redesign</h5>
+                    <p class="card-text">Revamped an outdated corporate website, enhancing UX and mobile responsiveness to boost engagement and SEO performance.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>                
+    </div>
+    <div class="row">
+        <div class="text-centre mb-4"><h3>Data Analytics Projects</h3></div>
+</div>
+<div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_analytics1.jpg') }}" class="card-img-top" alt="Sales Dashboard">
+                <div class="card-body">
+                    <h5 class="card-title">Sales Dashboard</h5>
+                    <p class="card-text">Developed an interactive sales dashboard with KPIs, helping track performance and trends using Power BI and SQL.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_analytics2.jpg') }}" class="card-img-top" alt="Customer Segmentation">
+                <div class="card-body">
+                    <h5 class="card-title">Customer Segmentation</h5>
+                    <p class="card-text">Analyzed customer data to create segments for personalized marketing strategies, increasing conversion rates by 15%.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_analytics3.jpg') }}" class="card-img-top" alt="Market Trend Analysis">
+                <div class="card-body">
+                    <h5 class="card-title">Market Trend Analysis</h5>
+                    <p class="card-text">Implemented a data-driven analysis to predict market trends, assisting in strategic business decisions for clients.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_analytics4.jpg') }}" class="card-img-top" alt="Data Cleaning and Transformation">
+                <div class="card-body">
+                    <h5 class="card-title">Data Cleaning and Transformation</h5>
+                    <p class="card-text">Conducted extensive data quality checks and cleaning to improve data accuracy, enabling more reliable analysis.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="text-centre mb-4"><h3>Data Science Projects</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ds1.jpg') }}" class="card-img-top" alt="Customer Churn Prediction">
+                <div class="card-body">
+                    <h5 class="card-title">Customer Churn Prediction</h5>
+                    <p class="card-text">Developed a predictive model to anticipate customer churn, helping reduce churn rates by identifying at-risk customers.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ds2.jpg') }}" class="card-img-top" alt="Fraud Detection">
+                <div class="card-body">
+                    <h5 class="card-title">Fraud Detection</h5>
+                    <p class="card-text">Implemented machine learning algorithms to identify potentially fraudulent transactions in real time.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ds3.jpg') }}" class="card-img-top" alt="NLP Sentiment Analysis">
+                <div class="card-body">
+                    <h5 class="card-title">NLP Sentiment Analysis</h5>
+                    <p class="card-text">Used NLP techniques to analyze social media sentiment, providing insights into public opinion on various brands.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ds4.jpg') }}" class="card-img-top" alt="Predictive Analytics for Sales">
+                <div class="card-body">
+                    <h5 class="card-title">Predictive Analytics for Sales</h5>
+                    <p class="card-text">Applied predictive analytics to forecast future sales trends, helping optimize stock and inventory management.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="text-centre mb-4"><h3>Machine Learning & AI Projects</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ai1.jpg') }}" class="card-img-top" alt="Product Recommendation System">
+                <div class="card-body">
+                    <h5 class="card-title">Product Recommendation System</h5>
+                    <p class="card-text">Built a recommendation engine for an e-commerce site, providing personalized suggestions based on user behavior.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ai2.jpg') }}" class="card-img-top" alt="Image Recognition Model">
+                <div class="card-body">
+                    <h5 class="card-title">Image Recognition Model</h5>
+                    <p class="card-text">Implemented image recognition for quality inspection, identifying defects in manufacturing with high accuracy.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ai3.jpg') }}" class="card-img-top" alt="Intelligent Chatbot">
+                <div class="card-body">
+                    <h5 class="card-title">Intelligent Chatbot</h5>
+                    <p class="card-text">Developed a chatbot to handle customer inquiries, reducing response time and improving user engagement on a support platform.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='images/project_ai4.jpg') }}" class="card-img-top" alt="Predictive Maintenance for IoT">
+                <div class="card-body">
+                    <h5 class="card-title">Predictive Maintenance for IoT</h5>
+                    <p class="card-text">Created a predictive maintenance model using IoT data, forecasting potential equipment failures to reduce downtime.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
